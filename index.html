@@ -1,0 +1,1392 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>印象足拍班花_校园影像社区_官方视频门户</title>
+<meta name="description" content="印象足拍班花官方网站，专注校园生活影像与青春记录的视频品牌平台，汇聚创作者原创内容，持续运营校园影像社区。">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23f0563c'/%3E%3Cpath d='M18 20h28v24H18z' fill='%23fff' opacity='.92'/%3E%3Cpath d='M27 27l12 5-12 5z' fill='%23f0563c'/%3E%3C/svg%3E">
+<style>
+:root{
+  --yp-main:#f0563c;
+  --yp-main-deep:#c53c25;
+  --yp-ink:#22201f;
+  --yp-body:#4a4644;
+  --yp-soft:#f7f1ec;
+  --yp-soft2:#fdf9f6;
+  --yp-line:#e8ded6;
+  --yp-gold:#e8a33d;
+  --yp-radius:18px;
+  --yp-shadow:0 10px 30px rgba(80,50,38,.08);
+  --yp-sticky:104px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:var(--yp-sticky)}
+body{
+  font-family:"PingFang SC","Hiragino Sans GB","Microsoft YaHei",system-ui,sans-serif;
+  color:var(--yp-body);background:var(--yp-soft2);line-height:1.75;
+  -webkit-font-smoothing:antialiased;
+}
+img,svg{display:block;max-width:100%}
+a{color:inherit;text-decoration:none}
+button{font-family:inherit;cursor:pointer;border:none;background:none}
+.yp-wrap{width:100%;max-width:1180px;margin:0 auto;padding:0 22px}
+.yp-h1,.yp-h2,.yp-h3,.yp-h4{color:var(--yp-ink);line-height:1.35;font-weight:800}
+.yp-h2{font-size:clamp(22px,3.4vw,32px);letter-spacing:.5px}
+.yp-h3{font-size:clamp(17px,2.2vw,20px)}
+.yp-h4{font-size:16px}
+.yp-sec{padding:64px 0}
+.yp-sec-alt{background:var(--yp-soft)}
+.yp-eyebrow{display:inline-flex;align-items:center;gap:8px;font-size:13px;font-weight:700;color:var(--yp-main-deep);letter-spacing:2px;text-transform:uppercase}
+.yp-eyebrow::before{content:"";width:26px;height:3px;border-radius:3px;background:var(--yp-main)}
+.yp-sec-head{display:flex;flex-wrap:wrap;gap:14px;align-items:flex-end;justify-content:space-between;margin-bottom:34px}
+.yp-sec-head p{max-width:520px;font-size:15px;color:#7b716b}
+.yp-muted{color:#8b817b;font-size:14px}
+
+/* ============ 公告 + 页头 吸顶 ============ */
+.yp-topbar{position:relative;z-index:60}
+.yp-sticky-head{position:sticky;top:0;z-index:50;background:rgba(253,249,246,.94);backdrop-filter:blur(12px);border-bottom:1px solid var(--yp-line);transition:box-shadow .25s}
+.yp-sticky-head.yp-elev{box-shadow:0 6px 22px rgba(80,50,38,.12)}
+.yp-announce{background:linear-gradient(90deg,#2a2523,#3a302c 55%,#4a372f);color:#f6ece5;font-size:13.5px}
+.yp-announce-in{display:flex;align-items:center;gap:12px;padding:9px 0;overflow:hidden}
+.yp-announce-tag{flex:0 0 auto;background:var(--yp-main);color:#fff;font-size:11px;font-weight:800;letter-spacing:1px;padding:2px 9px;border-radius:20px}
+.yp-announce-track{display:flex;gap:44px;white-space:nowrap;animation:ypMarquee 30s linear infinite;padding-left:6px}
+.yp-announce-track span::before{content:"◆";color:var(--yp-gold);margin-right:8px;font-size:10px}
+@keyframes ypMarquee{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+.yp-nav{display:flex;align-items:center;gap:20px;padding:12px 0}
+.yp-brand{display:flex;align-items:center;gap:11px;flex:0 0 auto}
+.yp-brand-mark{width:42px;height:42px;border-radius:12px;background:linear-gradient(135deg,var(--yp-main),var(--yp-gold));display:grid;place-items:center;color:#fff;font-weight:900;font-size:18px;letter-spacing:-1px;box-shadow:0 6px 16px rgba(240,86,60,.3)}
+.yp-brand-name{font-size:19px;font-weight:900;color:var(--yp-ink);letter-spacing:1px;line-height:1.2}
+.yp-brand-sub{font-size:11px;color:#9c918a;letter-spacing:2.6px}
+.yp-nav-links{display:flex;gap:4px;margin-left:auto}
+.yp-nav-links a{font-size:14.5px;font-weight:600;color:#5c534e;padding:8px 13px;border-radius:9px;transition:.2s}
+.yp-nav-links a:hover{background:#fff;color:var(--yp-main-deep)}
+.yp-search{position:relative;flex:0 0 auto;width:210px}
+.yp-search input{width:100%;padding:9px 36px 9px 14px;border:1.5px solid var(--yp-line);border-radius:20px;background:#fff;font-size:13.5px;color:var(--yp-ink);outline:none;transition:.2s}
+.yp-search input:focus{border-color:var(--yp-main);box-shadow:0 0 0 4px rgba(240,86,60,.12)}
+.yp-search button{position:absolute;right:4px;top:50%;transform:translateY(-50%);width:28px;height:28px;border-radius:50%;background:var(--yp-main);color:#fff;display:grid;place-items:center;font-size:13px}
+.yp-search-tip{position:absolute;top:calc(100% + 8px);left:0;right:0;background:#fff;border:1px solid var(--yp-line);border-radius:12px;box-shadow:var(--yp-shadow);padding:10px 12px;font-size:13px;color:#6f6560;display:none;z-index:80}
+.yp-search-tip.yp-show{display:block}
+.yp-burger{display:none;width:40px;height:40px;border-radius:10px;border:1.5px solid var(--yp-line);background:#fff;place-items:center;gap:4px;flex-direction:column}
+.yp-burger span{width:17px;height:2px;background:var(--yp-ink);border-radius:2px;transition:.2s}
+.yp-mobile-menu{display:none;flex-direction:column;gap:2px;padding:8px 0 16px;border-top:1px dashed var(--yp-line)}
+.yp-mobile-menu.yp-open{display:flex}
+.yp-mobile-menu a{padding:11px 10px;border-radius:9px;font-weight:600;color:#4f4740}
+.yp-mobile-menu a:hover{background:#fff;color:var(--yp-main-deep)}
+
+/* ============ 首屏 ============ */
+.yp-hero{padding:52px 0 66px;background:
+  radial-gradient(1100px 500px at 82% -10%,#ffe6dc 0%,rgba(255,230,220,0) 62%),
+  radial-gradient(700px 420px at 0% 100%,#fff3e4 0%,rgba(255,243,228,0) 65%),
+  var(--yp-soft2);}
+.yp-hero-grid{display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,.95fr);gap:46px;align-items:center}
+.yp-hero h1{font-size:clamp(34px,5.4vw,58px);letter-spacing:2px;font-weight:900;line-height:1.14;color:var(--yp-ink)}
+.yp-hero h1 em{font-style:normal;color:var(--yp-main);position:relative}
+.yp-hero h1 em::after{content:"";position:absolute;left:0;right:0;bottom:4px;height:9px;background:rgba(232,163,61,.35);border-radius:5px;z-index:-1}
+.yp-hero-lead{font-size:16.5px;margin:18px 0 6px;color:#5a504a;max-width:520px}
+.yp-hero-badges{display:flex;flex-wrap:wrap;gap:8px;margin:16px 0 22px}
+.yp-hero-badges span{font-size:12.5px;font-weight:700;color:var(--yp-main-deep);background:#fff;border:1px solid #f3d9d0;border-radius:20px;padding:5px 13px}
+.yp-hero-btns{display:flex;flex-wrap:wrap;gap:12px}
+.yp-btn{display:inline-flex;align-items:center;gap:8px;padding:12px 24px;border-radius:30px;font-weight:800;font-size:14.5px;transition:.22s;border:1.5px solid transparent}
+.yp-btn-main{background:var(--yp-main);color:#fff;box-shadow:0 10px 22px rgba(240,86,60,.28)}
+.yp-btn-main:hover{background:var(--yp-main-deep);transform:translateY(-2px)}
+.yp-btn-ghost{background:#fff;color:var(--yp-ink);border-color:var(--yp-line)}
+.yp-btn-ghost:hover{border-color:var(--yp-main);color:var(--yp-main-deep);transform:translateY(-2px)}
+.yp-hero-stats{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;margin-top:30px;max-width:560px}
+.yp-stat{background:#fff;border:1px solid var(--yp-line);border-radius:14px;padding:13px 14px}
+.yp-stat b{display:block;font-size:clamp(20px,2.6vw,26px);color:var(--yp-ink);letter-spacing:-.5px;line-height:1.2}
+.yp-stat span{font-size:12.5px;color:#918681}
+.yp-hero-art{position:relative}
+.yp-hero-art .yp-hero-frame{border-radius:26px;overflow:hidden;box-shadow:0 26px 60px rgba(120,60,40,.18);border:6px solid #fff;aspect-ratio:4/3.35;background:#f3e6de}
+.yp-hero-art img{width:100%;height:100%;object-fit:cover}
+.yp-hero-float{position:absolute;left:-16px;bottom:22px;background:#fff;border-radius:14px;padding:11px 15px;box-shadow:var(--yp-shadow);display:flex;align-items:center;gap:10px;max-width:250px}
+.yp-hero-float i{width:34px;height:34px;flex:0 0 auto;border-radius:10px;background:linear-gradient(135deg,var(--yp-gold),var(--yp-main));display:grid;place-items:center;color:#fff;font-style:normal;font-weight:900;font-size:15px}
+.yp-hero-float b{display:block;font-size:13.5px;color:var(--yp-ink)}
+.yp-hero-float span{font-size:11.5px;color:#948a84}
+
+/* ============ 关于 ============ */
+.yp-about-grid{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,.85fr);gap:44px;align-items:start}
+.yp-about-text p{margin-bottom:14px;font-size:15.5px}
+.yp-about-text strong{color:var(--yp-main-deep)}
+.yp-about-side{background:#fff;border:1px solid var(--yp-line);border-radius:var(--yp-radius);padding:24px;box-shadow:var(--yp-shadow)}
+.yp-about-side h3{margin-bottom:14px}
+.yp-quote{border-left:4px solid var(--yp-main);padding:4px 0 4px 14px;font-size:14.5px;color:#635852;margin:16px 0;background:linear-gradient(90deg,#fff6f2,transparent)}
+.yp-mini-list{list-style:none;display:grid;gap:10px}
+.yp-mini-list li{display:flex;gap:10px;align-items:flex-start;font-size:14px}
+.yp-mini-list li::before{content:"✓";flex:0 0 auto;width:20px;height:20px;border-radius:50%;background:#fde9e3;color:var(--yp-main-deep);font-size:12px;font-weight:900;display:grid;place-items:center;margin-top:2px}
+
+/* ============ 视频卡片通用 ============ */
+.yp-card{background:#fff;border:1px solid var(--yp-line);border-radius:var(--yp-radius);overflow:hidden;transition:.26s;display:flex;flex-direction:column;min-width:0}
+.yp-card:hover{transform:translateY(-4px);box-shadow:0 18px 38px rgba(120,60,40,.13);border-color:#f0c9bb}
+.yp-thumb{position:relative;aspect-ratio:16/9;overflow:hidden;background:var(--yp-soft)}
+.yp-thumb img{width:100%;height:100%;object-fit:cover;transition:transform .5s}
+.yp-card:hover .yp-thumb img{transform:scale(1.05)}
+.yp-thumb .yp-dur{position:absolute;right:9px;bottom:9px;background:rgba(24,18,16,.78);color:#fff;font-size:11.5px;padding:2px 8px;border-radius:6px;letter-spacing:.5px}
+.yp-thumb .yp-play{position:absolute;inset:0;display:grid;place-items:center;opacity:0;transition:.3s;background:linear-gradient(0deg,rgba(34,20,16,.28),rgba(34,20,16,.05))}
+.yp-card:hover .yp-thumb .yp-play{opacity:1}
+.yp-play i{width:48px;height:48px;border-radius:50%;background:rgba(255,255,255,.94);display:grid;place-items:center;color:var(--yp-main);font-style:normal;font-size:16px;padding-left:3px}
+.yp-card-body{padding:16px 17px 17px;display:flex;flex-direction:column;gap:9px;flex:1}
+.yp-card-body h3{font-size:16.5px;line-height:1.5}
+.yp-card-body p{font-size:13.5px;color:#7b716b;flex:1}
+.yp-meta{display:flex;flex-wrap:wrap;gap:8px;align-items:center;font-size:12.5px;color:#9a908a}
+.yp-meta b{color:var(--yp-main-deep);font-weight:700}
+.yp-tags{display:flex;flex-wrap:wrap;gap:6px}
+.yp-tag{font-size:11.5px;font-weight:700;color:#a25a3f;background:#fdeee8;border-radius:14px;padding:2px 10px}
+.yp-card-foot{display:flex;align-items:center;justify-content:space-between;gap:10px;border-top:1px dashed var(--yp-line);padding-top:11px;margin-top:2px}
+.yp-actions{display:flex;gap:6px}
+.yp-act{display:inline-flex;align-items:center;gap:5px;font-size:12.5px;color:#8b817b;border:1px solid var(--yp-line);border-radius:16px;padding:4px 10px;transition:.2s;background:#fff}
+.yp-act:hover{border-color:var(--yp-main);color:var(--yp-main-deep)}
+.yp-act.yp-liked{color:var(--yp-main);border-color:#f6bfae;background:#fff4f0}
+.yp-act.yp-saved{color:var(--yp-gold);border-color:#f2d9ae;background:#fffaf0}
+.yp-linkmore{font-size:13px;font-weight:800;color:var(--yp-main-deep);white-space:nowrap}
+.yp-linkmore:hover{text-decoration:underline}
+
+/* 焦点布局：一大三小 */
+.yp-focus-grid{display:grid;grid-template-columns:minmax(0,1.25fr) minmax(0,.75fr);gap:22px;align-items:stretch}
+.yp-focus-main .yp-thumb{aspect-ratio:16/10}
+.yp-focus-main .yp-card-body h3{font-size:20px}
+.yp-focus-side{display:grid;gap:14px;min-width:0}
+.yp-side-item{display:flex;gap:12px;background:#fff;border:1px solid var(--yp-line);border-radius:14px;padding:11px;transition:.24s;min-width:0}
+.yp-side-item:hover{transform:translateX(4px);border-color:#f0c9bb;box-shadow:var(--yp-shadow)}
+.yp-side-item .yp-side-thumb{flex:0 0 96px;aspect-ratio:16/11;border-radius:9px;overflow:hidden;background:var(--yp-soft)}
+.yp-side-item .yp-side-thumb img{width:100%;height:100%;object-fit:cover}
+.yp-side-item h4{font-size:14px;line-height:1.45;margin-bottom:5px}
+.yp-side-item span{font-size:12px;color:#9a908a}
+
+/* 视频三列 */
+.yp-vgrid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:22px}
+
+/* ============ 榜单（紧凑条目） ============ */
+.yp-charts{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px}
+.yp-chart{background:#fff;border:1px solid var(--yp-line);border-radius:var(--yp-radius);padding:22px;box-shadow:var(--yp-shadow);min-width:0}
+.yp-chart h3{display:flex;align-items:center;gap:8px;margin-bottom:6px}
+.yp-chart h3 .yp-crown{font-size:15px}
+.yp-chart .yp-muted{margin-bottom:14px;display:block}
+.yp-chart ol{list-style:none;display:grid;gap:12px;counter-reset:ypc}
+.yp-chart li{display:flex;gap:11px;align-items:flex-start;font-size:13.5px;min-width:0}
+.yp-chart li::before{counter-increment:ypc;content:counter(ypc);flex:0 0 22px;height:22px;border-radius:7px;background:#fdf0ea;color:var(--yp-main-deep);font-weight:900;font-size:12px;display:grid;place-items:center;margin-top:1px}
+.yp-chart li:nth-child(1)::before{background:var(--yp-main);color:#fff}
+.yp-chart li:nth-child(2)::before{background:var(--yp-gold);color:#fff}
+.yp-chart li b{color:var(--yp-ink);font-weight:700;display:block;line-height:1.45}
+.yp-chart li span{color:#9a908a;font-size:12px}
+
+/* ============ 专题 ============ */
+.yp-topic{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:22px;margin-bottom:22px}
+.yp-topic-card{background:#fff;border:1px solid var(--yp-line);border-radius:var(--yp-radius);overflow:hidden;display:flex;flex-direction:column;min-width:0;transition:.26s}
+.yp-topic-card:hover{box-shadow:0 18px 38px rgba(120,60,40,.13);border-color:#f0c9bb}
+.yp-topic-card .yp-thumb{aspect-ratio:16/7.5}
+.yp-topic-body{padding:18px 20px 20px}
+.yp-topic-body h3{font-size:18px;margin-bottom:6px}
+.yp-topic-body p{font-size:13.5px;color:#7b716b;margin-bottom:12px}
+.yp-topic-status{font-size:11.5px;font-weight:800;color:#1f8a5b;background:#e8f7ef;border-radius:12px;padding:2px 10px;margin-left:8px;vertical-align:middle}
+.yp-topic-status.yp-updating{color:#b9761a;background:#fdf3e2}
+.yp-topic-list{list-style:none;display:grid;gap:9px}
+.yp-topic-list li{display:flex;gap:9px;font-size:13.5px;color:#5d534e;align-items:baseline}
+.yp-topic-list li::before{content:"▸";color:var(--yp-main);flex:0 0 auto;font-weight:900}
+.yp-topic-list li em{font-style:normal;color:#a99f99;font-size:12px;margin-left:auto;white-space:nowrap}
+
+/* ============ 作者矩阵 ============ */
+.yp-authors{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:20px}
+.yp-author{background:#fff;border:1px solid var(--yp-line);border-radius:var(--yp-radius);padding:22px 18px;text-align:center;transition:.26s;min-width:0}
+.yp-author:hover{transform:translateY(-4px);box-shadow:0 18px 38px rgba(120,60,40,.12);border-color:#f0c9bb}
+.yp-avatar{width:74px;height:74px;border-radius:50%;margin:0 auto 12px;display:grid;place-items:center;font-weight:900;font-size:26px;color:#fff;letter-spacing:1px;box-shadow:0 8px 18px rgba(0,0,0,.12)}
+.yp-author h3{font-size:16px;margin-bottom:3px}
+.yp-author .yp-role{font-size:12px;color:var(--yp-main-deep);font-weight:700;margin-bottom:9px;display:block}
+.yp-author p{font-size:13px;color:#83777 ;color:#837771;line-height:1.72;margin-bottom:12px;text-align:left}
+.yp-author-nums{display:flex;justify-content:center;gap:16px;font-size:12px;color:#9a908a;border-top:1px dashed var(--yp-line);padding-top:11px;margin-bottom:12px}
+.yp-author-nums b{display:block;color:var(--yp-ink);font-size:15px}
+.yp-author .yp-btn{width:100%;justify-content:center;padding:8px 0;font-size:13px}
+
+/* ============ 故事 ============ */
+.yp-stories{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:22px}
+.yp-story{background:#fff;border:1px solid var(--yp-line);border-radius:var(--yp-radius);padding:24px;position:relative;overflow:hidden;min-width:0}
+.yp-story::after{content:"";position:absolute;right:-40px;top:-40px;width:130px;height:130px;border-radius:50%;background:radial-gradient(circle,#ffe9e0,transparent 70%)}
+.yp-story h3{font-size:17px;margin-bottom:10px;position:relative}
+.yp-story p{font-size:14px;color:#6d635d;position:relative;margin-bottom:10px}
+.yp-story .yp-story-meta{font-size:12.5px;color:#a99f99;display:flex;gap:12px;flex-wrap:wrap;position:relative}
+
+/* ============ 评价 ============ */
+.yp-reviews{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}
+.yp-review{background:#fff;border:1px solid var(--yp-line);border-radius:16px;padding:18px 20px;min-width:0}
+.yp-review-top{display:flex;align-items:center;gap:10px;margin-bottom:10px}
+.yp-review-top .yp-mini-av{width:36px;height:36px;border-radius:50%;display:grid;place-items:center;color:#fff;font-weight:900;font-size:14px;flex:0 0 auto}
+.yp-review-top b{display:block;font-size:14px;color:var(--yp-ink)}
+.yp-review-top span{font-size:11.5px;color:#a99f99}
+.yp-stars{margin-left:auto;color:var(--yp-gold);font-size:13px;letter-spacing:1px;flex:0 0 auto}
+.yp-review p{font-size:13.5px;color:#6d635d}
+.yp-review.yp-quote-review{border-left:4px solid var(--yp-gold);background:linear-gradient(120deg,#fffaf3,#fff)}
+
+/* ============ 数据条 ============ */
+.yp-numbers{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:18px;margin-top:26px}
+.yp-number{background:#fff;border:1px solid var(--yp-line);border-radius:16px;padding:20px;text-align:center}
+.yp-number b{display:block;font-size:clamp(22px,3vw,30px);color:var(--yp-main-deep);letter-spacing:-.5px}
+.yp-number span{font-size:13px;color:#8b817b}
+
+/* ============ FAQ ============ */
+.yp-faq{display:grid;gap:12px;max-width:900px;margin:0 auto}
+.yp-faq details{background:#fff;border:1px solid var(--yp-line);border-radius:14px;padding:0 18px;transition:.2s}
+.yp-faq details[open]{border-color:#f0c9bb;box-shadow:var(--yp-shadow)}
+.yp-faq summary{list-style:none;cursor:pointer;padding:15px 0;font-weight:700;color:var(--yp-ink);font-size:15px;display:flex;align-items:center;gap:10px}
+.yp-faq summary::-webkit-details-marker{display:none}
+.yp-faq summary::before{content:"+";flex:0 0 22px;height:22px;border-radius:7px;background:#fdf0ea;color:var(--yp-main-deep);font-weight:900;display:grid;place-items:center;transition:.2s}
+.yp-faq details[open] summary::before{content:"−";background:var(--yp-main);color:#fff}
+.yp-faq details p{font-size:14px;color:#6d635d;padding:0 0 16px 32px}
+
+/* ============ 合作墙 ============ */
+.yp-partners{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:14px}
+.yp-partner{background:#fff;border:1px solid var(--yp-line);border-radius:14px;padding:18px 12px;text-align:center;font-weight:800;color:#7d726c;font-size:14px;transition:.22s}
+.yp-partner:hover{color:var(--yp-main-deep);border-color:#f0c9bb;transform:translateY(-3px)}
+.yp-partner small{display:block;font-weight:600;font-size:11px;color:#aaa09a;margin-top:3px;letter-spacing:1px}
+
+/* ============ 投稿 CTA ============ */
+.yp-cta{background:linear-gradient(115deg,#2a2523,#43322b 62%,#6a3c2c);border-radius:26px;padding:44px;color:#f6ece5;display:grid;grid-template-columns:minmax(0,1.3fr) minmax(0,.7fr);gap:30px;align-items:center;position:relative;overflow:hidden}
+.yp-cta::before{content:"";position:absolute;right:-80px;top:-80px;width:280px;height:280px;border-radius:50%;background:radial-gradient(circle,rgba(232,163,61,.4),transparent 66%)}
+.yp-cta h2{color:#fff;font-size:clamp(22px,3.2vw,30px);margin-bottom:10px;position:relative}
+.yp-cta p{font-size:14.5px;color:#e6d6cd;max-width:560px;position:relative}
+.yp-cta-side{display:flex;flex-direction:column;gap:12px;position:relative}
+.yp-cta-side .yp-btn{justify-content:center}
+.yp-btn-gold{background:var(--yp-gold);color:#2a2523;box-shadow:0 10px 22px rgba(232,163,61,.3)}
+.yp-btn-gold:hover{background:#f0b758;transform:translateY(-2px)}
+
+/* ============ 页脚 ============ */
+.yp-footer{background:#26211f;color:#bdb1aa;padding:54px 0 0;margin-top:12px}
+.yp-foot-grid{display:grid;grid-template-columns:minmax(0,1.5fr) minmax(0,1fr) minmax(0,1fr) minmax(0,1.2fr);gap:32px;padding-bottom:36px}
+.yp-footer .yp-brand-name{color:#fff}
+.yp-footer .yp-brand-sub{color:#8c7f78}
+.yp-foot-desc{font-size:13.5px;color:#a89c95;margin-top:14px;max-width:330px}
+.yp-foot-grid h4{color:#fff;font-size:14.5px;margin-bottom:14px;letter-spacing:1px}
+.yp-foot-grid ul{list-style:none;display:grid;gap:9px;font-size:13.5px}
+.yp-foot-grid ul a:hover{color:var(--yp-gold)}
+.yp-foot-contact{font-size:13.5px;color:#a89c95;line-height:2}
+.yp-foot-contact b{color:#e6d6cd;font-weight:600}
+.yp-foot-bottom{border-top:1px solid #3a332f;padding:18px 0;display:flex;flex-wrap:wrap;gap:10px;justify-content:space-between;font-size:12.5px;color:#8c7f78}
+
+/* ============ 弹窗/Toast ============ */
+.yp-toast{position:fixed;left:50%;bottom:34px;transform:translate(-50%,20px);background:#26211f;color:#fff;font-size:13.5px;padding:11px 22px;border-radius:30px;opacity:0;pointer-events:none;transition:.3s;z-index:200;box-shadow:0 12px 30px rgba(0,0,0,.25)}
+.yp-toast.yp-show{opacity:1;transform:translate(-50%,0)}
+.yp-modal{position:fixed;inset:0;background:rgba(30,22,18,.55);display:none;place-items:center;z-index:150;padding:20px}
+.yp-modal.yp-show{display:grid}
+.yp-modal-box{background:#fff;border-radius:20px;max-width:480px;width:100%;padding:26px;box-shadow:0 30px 70px rgba(0,0,0,.3);max-height:86vh;overflow:auto}
+.yp-modal-box h3{margin-bottom:10px}
+.yp-modal-box p{font-size:14px;color:#6d635d;margin-bottom:16px}
+.yp-modal-box input,.yp-modal-box textarea{width:100%;border:1.5px solid var(--yp-line);border-radius:11px;padding:10px 13px;font-size:14px;font-family:inherit;margin-bottom:12px;outline:none;resize:vertical}
+.yp-modal-box input:focus,.yp-modal-box textarea:focus{border-color:var(--yp-main)}
+.yp-modal-close{float:right;font-size:20px;color:#a99f99;line-height:1}
+
+/* 回顶部 */
+.yp-totop{position:fixed;right:24px;bottom:26px;width:46px;height:46px;border-radius:50%;background:var(--yp-main);color:#fff;display:grid;place-items:center;font-size:17px;box-shadow:0 12px 26px rgba(240,86,60,.35);opacity:0;pointer-events:none;transition:.28s;z-index:90}
+.yp-totop.yp-show{opacity:1;pointer-events:auto}
+.yp-totop:hover{background:var(--yp-main-deep);transform:translateY(-3px)}
+
+/* 搜索无结果 */
+.yp-empty{display:none;text-align:center;padding:30px;font-size:14px;color:#9a908a;grid-column:1/-1}
+.yp-empty.yp-show{display:block}
+
+/* 深度解析 */
+.yp-deep{max-width:960px;margin:0 auto}
+.yp-deep p{font-size:15px;margin-bottom:15px;color:#544b46}
+.yp-deep h3{margin:26px 0 10px;padding-left:12px;border-left:4px solid var(--yp-main)}
+.yp-deep-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px;margin:24px 0}
+.yp-deep-card{background:#fff;border:1px solid var(--yp-line);border-radius:14px;padding:18px}
+.yp-deep-card b{display:block;color:var(--yp-main-deep);font-size:14px;margin-bottom:6px}
+.yp-deep-card span{font-size:13px;color:#7b716b}
+
+/* 响应式 */
+@media(max-width:1024px){
+  .yp-hero-grid{grid-template-columns:1fr;gap:32px}
+  .yp-hero-art{max-width:640px}
+  .yp-about-grid{grid-template-columns:1fr;gap:28px}
+  .yp-focus-grid{grid-template-columns:1fr}
+  .yp-vgrid{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .yp-authors{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .yp-charts{grid-template-columns:1fr}
+  .yp-partners{grid-template-columns:repeat(3,minmax(0,1fr))}
+  .yp-cta{grid-template-columns:1fr;padding:32px}
+  .yp-foot-grid{grid-template-columns:1fr 1fr}
+  .yp-deep-grid{grid-template-columns:1fr}
+}
+@media(max-width:860px){
+  .yp-nav-links,.yp-search{display:none}
+  .yp-burger{display:flex;margin-left:auto}
+  .yp-nav{padding:10px 0}
+  .yp-sticky-head .yp-search{display:none}
+  .yp-mobile-menu .yp-search{display:block;width:100%;margin-top:8px}
+}
+@media(max-width:720px){
+  :root{--yp-sticky:96px}
+  .yp-sec{padding:46px 0}
+  .yp-hero{padding:34px 0 46px}
+  .yp-vgrid{grid-template-columns:1fr}
+  .yp-topic{grid-template-columns:1fr}
+  .yp-stories{grid-template-columns:1fr}
+  .yp-reviews{grid-template-columns:1fr}
+  .yp-authors{grid-template-columns:1fr}
+  .yp-numbers{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .yp-hero-stats{grid-template-columns:repeat(3,minmax(0,1fr));gap:8px}
+  .yp-stat{padding:10px 9px}
+  .yp-partners{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .yp-foot-grid{grid-template-columns:1fr;gap:24px}
+  .yp-faq details p{padding-left:0}
+  .yp-hero-float{left:8px;bottom:10px;padding:9px 12px}
+  .yp-announce-in{padding:7px 0}
+  .yp-deep p{font-size:14.5px}
+}
+</style>
+<script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+</head>
+<body>
+
+<!-- S1 公告条 + 页头（吸顶） -->
+<div class="yp-sticky-head" id="ypStickyHead">
+  <div class="yp-announce">
+    <div class="yp-wrap yp-announce-in">
+      <span class="yp-announce-tag">官方发布</span>
+      <div class="yp-announce-track" id="ypAnnounceTrack">
+        <span>「班花日常 24H」第三季新增 12 条高清原创短片，校园影像专题上线</span>
+        <span>印象足拍班花 2026 秋季创作者扶持计划开放报名，上传作品即获流量推荐</span>
+        <span>「新生报到日」城市驻拍企划新增杭州、成都、西安三地拍摄点</span>
+        <span>社区投票「最想看的班花主题」结果公布，毕业季与社团招新高票入选</span>
+        <span>「班花日常 24H」第三季新增 12 条高清原创短片，校园影像专题上线</span>
+        <span>印象足拍班花 2026 秋季创作者扶持计划开放报名，上传作品即获流量推荐</span>
+        <span>「新生报到日」城市驻拍企划新增杭州、成都、西安三地拍摄点</span>
+        <span>社区投票「最想看的班花主题」结果公布，毕业季与社团招新高票入选</span>
+      </div>
+    </div>
+  </div>
+  <header class="yp-header">
+    <div class="yp-wrap">
+      <nav class="yp-nav" aria-label="主导航">
+        <a href="#ypTop" class="yp-brand" aria-label="印象足拍班花首页">
+          <span class="yp-brand-mark">印</span>
+          <span>
+            <span class="yp-brand-name">印象足拍班花</span>
+            <span class="yp-brand-sub">CAMPUS FILM LAB</span>
+          </span>
+        </a>
+        <div class="yp-nav-links">
+          <a href="#ypFocus">焦点影像</a>
+          <a href="#ypVideos">热门视频</a>
+          <a href="#ypTopics">专题企划</a>
+          <a href="#ypAuthors">创作者</a>
+          <a href="#ypReviews">口碑评价</a>
+          <a href="#ypDynamic">企业动态</a>
+          <a href="#ypFaq">常见问题</a>
+        </div>
+        <div class="yp-search" id="ypSearchDesk">
+          <input type="search" id="ypSearchInput" placeholder="搜索班花影像 / 创作者" aria-label="站内搜索">
+          <button type="button" id="ypSearchBtn" aria-label="搜索">⌕</button>
+          <div class="yp-search-tip" id="ypSearchTip"></div>
+        </div>
+        <button class="yp-burger" id="ypBurger" aria-label="展开菜单" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </nav>
+      <div class="yp-mobile-menu" id="ypMobileMenu">
+        <a href="#ypFocus">焦点影像</a>
+        <a href="#ypVideos">热门视频</a>
+        <a href="#ypTopics">专题企划</a>
+        <a href="#ypAuthors">创作者</a>
+        <a href="#ypReviews">口碑评价</a>
+        <a href="#ypDynamic">企业动态</a>
+        <a href="#ypFaq">常见问题</a>
+        <div class="yp-search" style="width:100%">
+          <input type="search" id="ypSearchInputM" placeholder="搜索班花影像 / 创作者" aria-label="移动端搜索">
+          <button type="button" id="ypSearchBtnM" aria-label="搜索">⌕</button>
+        </div>
+      </div>
+    </div>
+  </header>
+</div>
+
+<main id="ypTop">
+
+  <!-- S2 品牌首屏 -->
+  <section class="yp-hero" aria-labelledby="ypHeroTitle">
+    <div class="yp-wrap yp-hero-grid">
+      <div>
+        <span class="yp-eyebrow">官方网站 · 校园影像社区</span>
+        <h1 class="yp-h1" id="ypHeroTitle" style="margin-top:14px">印象足拍<em>班花</em></h1>
+        <p class="yp-hero-lead">一间把镜头对准校园日常的影像实验室。我们以原创高清短片记录青春的细枝末节，用真实与温暖陪伴每一位创作者与观众。</p>
+        <div class="yp-hero-badges">
+          <span>官方正版影像库</span>
+          <span>持续运营 6 年</span>
+          <span>创作者内容生态</span>
+          <span>每周更新</span>
+        </div>
+        <div class="yp-hero-btns">
+          <a class="yp-btn yp-btn-main" href="#ypVideos">开始观看</a>
+          <a class="yp-btn yp-btn-ghost" href="#ypJoin" data-open="submit">投稿 / 报名</a>
+          <a class="yp-btn yp-btn-ghost" href="#ypAbout">了解品牌故事</a>
+        </div>
+        <div class="yp-hero-stats">
+          <div class="yp-stat"><b data-count="2860">2,860+</b><span>原创短片数</span></div>
+          <div class="yp-stat"><b data-count="142">142 位</b><span>签约创作者</span></div>
+          <div class="yp-stat"><b data-count="986">98.6 万</b><span>社区月活观众</span></div>
+        </div>
+      </div>
+      <div class="yp-hero-art">
+        <div class="yp-hero-frame">
+          <img id="ypHeroImg" alt="印象足拍班花首屏主视觉：晨光中的教学楼走廊，学生抱着书本走向镜头" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 800 670'%3E%3Cdefs%3E%3ClinearGradient id='s1' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%23ffe3d3'/%3E%3Cstop offset='.55' stop-color='%23f8b596'/%3E%3Cstop offset='1' stop-color='%23d9603f'/%3E%3C/linearGradient%3E%3ClinearGradient id='s2' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%23fff7f1'/%3E%3Cstop offset='1' stop-color='%23f6d0b8'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='800' height='670' fill='url(%23s1)'/%3E%3Ccircle cx='640' cy='130' r='150' fill='%23fff2e6' opacity='.68'/%3E%3Cpath d='M0 470 L800 380 L800 670 L0 670 Z' fill='%23402b22' opacity='.9'/%3E%3Crect x='70' y='180' width='330' height='260' rx='12' fill='url(%23s2)'/%3E%3Crect x='96' y='206' width='120' height='90' fill='%23c8532f' opacity='.55'/%3E%3Crect x='236' y='206' width='140' height='90' fill='%23e9895f' opacity='.6'/%3E%3Crect x='96' y='316' width='280' height='90' fill='%23f7c9ae' opacity='.85'/%3E%3Ccircle cx='520' cy='300' r='58' fill='%23fff0e2'/%3E%3Crect x='480' y='336' width='82' height='150' rx='34' fill='%232f2320'/%3E%3Crect x='600' y='250' width='140' height='196' rx='10' fill='%23fbe3d4' opacity='.9'/%3E%3Cpath d='M620 290h100M620 322h100M620 354h70' stroke='%23ca6c47' stroke-width='8' stroke-linecap='round' opacity='.7'/%3E%3Cpath d='M120 540h560' stroke='%23f2b28e' stroke-width='10' stroke-linecap='round' opacity='.55'/%3E%3Cpath d='M200 500c20-46 60-70 96-70s76 24 96 70' fill='%23ffeada' opacity='.9'/%3E%3Ctext x='400' y='628' text-anchor='middle' font-size='26' fill='%23ffe7d8' font-family='sans-serif' opacity='.85'%3E晨光走廊 · 24H 日常记录%3C/text%3E%3C/svg%3E">
+        </div>
+        <div class="yp-hero-float">
+          <i>▶</i>
+          <div>
+            <b>本周上新 · 街角的第一缕风</b>
+            <span>18 分钟前 · 高清原创</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- S3 焦点内容 -->
+  <section class="yp-sec" id="ypFocus" aria-labelledby="ypFocusTitle">
+    <div class="yp-wrap">
+      <div class="yp-sec-head">
+        <div>
+          <span class="yp-eyebrow">Focus · 焦点影像</span>
+          <h2 class="yp-h2" id="ypFocusTitle" style="margin-top:10px">印象足拍班花本周焦点</h2>
+        </div>
+        <p>编辑部从社区中挑出四支值得完整看完的短片，镜头里有课堂、走廊、天台与深夜的教室。</p>
+      </div>
+      <div class="yp-focus-grid">
+        <article class="yp-card yp-focus-main">
+          <div class="yp-thumb">
+            <img alt="焦点影片封面：放学后的教室，夕阳穿过窗户落在课桌上" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 800 500'%3E%3Cdefs%3E%3ClinearGradient id='f1' x1='0' y1='0' x2='0' y2='1'%3E%3Cstop offset='0' stop-color='%23ffd9a8'/%3E%3Cstop offset='1' stop-color='%23e87a45'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='800' height='500' fill='url(%23f1)'/%3E%3Crect x='0' y='300' width='800' height='200' fill='%23654234'/%3E%3Crect x='80' y='180' width='260' height='150' rx='8' fill='%23fff4e4' opacity='.92'/%3E%3Crect x='380' y='180' width='260' height='150' rx='8' fill='%23fff9f0' opacity='.9'/%3E%3Cpath d='M80 180 L210 60 L340 180 Z' fill='%23fcebd6'/%3E%3Cpath d='M380 180 L510 60 L640 180 Z' fill='%23fcebd6'/%3E%3Crect x='110' y='330' width='220' height='20' rx='6' fill='%237b4c37'/%3E%3Crect x='420' y='330' width='220' height='20' rx='6' fill='%237b4c37'/%3E%3Ccircle cx='620' cy='120' r='46' fill='%23fff3d6' opacity='.8'/%3E%3Cpath d='M0 470h800' stroke='%23ffce9c' stroke-width='6' opacity='.5'/%3E%3C/svg%3E">
+            <span class="yp-dur">12:46</span>
+            <span class="yp-play"><i>▶</i></span>
+          </div>
+          <div class="yp-card-body">
+            <div class="yp-tags"><span class="yp-tag">日常记录</span><span class="yp-tag">毕业季</span><span class="yp-tag">高清原创</span></div>
+            <h3>日落前最后一节课：我们把这三年剪成了一支片子</h3>
+            <p>三台机器、两个夏天、一次没有剧本的拍摄。班花影像社用 12 分钟还原一间教室从喧闹到安静的全过程，声音大部分来自现场收音，甚至保留了后排同学翻书与打哈欠的细节。</p>
+            <div class="yp-meta"><b>@林间取景器</b><span>播放 42.8 万</span><span>收藏 1.9 万</span></div>
+            <div class="yp-card-foot">
+              <div class="yp-actions">
+                <button class="yp-act" data-like="focus1" aria-label="点赞">♡ <span>8,214</span></button>
+                <button class="yp-act" data-save="focus1" aria-label="收藏">☆ 收藏</button>
+              </div>
+              <a class="yp-linkmore" href="#ypVideos">看完整片 →</a>
+            </div>
+          </div>
+        </article>
+        <div class="yp-focus-side">
+          <article class="yp-side-item">
+            <div class="yp-side-thumb">
+              <img alt="焦点影片封面：天台上的三位女生并肩看向远处的操场" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 320 220'%3E%3Crect width='320' height='220' fill='%23cfe3f2'/%3E%3Ccircle cx='250' cy='52' r='30' fill='%23fff2c9'/%3E%3Cpath d='M0 170h320v50H0z' fill='%236b7f8c'/%3E%3Ccircle cx='110' cy='110' r='22' fill='%23f2a58a'/%3E%3Cpath d='M88 170c0-26 10-40 22-40s22 14 22 40z' fill='%23e06a4b'/%3E%3Ccircle cx='170' cy='118' r='20' fill='%23f7c6ad'/%3E%3Cpath d='M150 170c0-24 9-36 20-36s20 12 20 36z' fill='%233f6b8f'/%3E%3Ccircle cx='226' cy='112' r='21' fill='%23eeb79c'/%3E%3Cpath d='M206 170c0-24 9-38 20-38s20 14 20 38z' fill='%237a5e8e'/%3E%3C/svg%3E">
+            </div>
+            <div>
+              <h4>天台上的一小时，风把校服吹成了旗</h4>
+              <span>@风里的小满 · 04:12</span>
+            </div>
+          </article>
+          <article class="yp-side-item">
+            <div class="yp-side-thumb">
+              <img alt="焦点影片封面：深夜教室的台灯下摊开的笔记与奶茶杯" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 320 220'%3E%3Crect width='320' height='220' fill='%232b2733'/%3E%3Crect x='40' y='40' width='240' height='140' rx='10' fill='%233a3546'/%3E%3Crect x='70' y='80' width='110' height='80' rx='6' fill='%23f6efd9'/%3E%3Cpath d='M86 100h78M86 116h78M86 132h54' stroke='%23988f7d' stroke-width='5' stroke-linecap='round'/%3E%3Ccircle cx='238' cy='130' r='28' fill='%23c96f4c'/%3E%3Cpath d='M232 104h12v-16h-12z' fill='%23ecd8c2'/%3E%3Ccircle cx='238' cy='62' r='20' fill='%23ffe0a8' opacity='.75'/%3E%3C/svg%3E">
+            </div>
+            <div>
+              <h4>十一点的晚自习：桌面上的第十七杯奶茶</h4>
+              <span>@三点半的猫 · 07:35</span>
+            </div>
+          </article>
+          <article class="yp-side-item">
+            <div class="yp-side-thumb">
+              <img alt="焦点影片封面：雨天的操场跑道与一把透明雨伞" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 320 220'%3E%3Crect width='320' height='220' fill='%238fa8b6'/%3E%3Cpath d='M0 150h320v70H0z' fill='%235b6f79'/%3E%3Cpath d='M150 60c40 0 62 30 62 60H88c0-30 22-60 62-60z' fill='%23eaf4f8' opacity='.9'/%3E%3Cpath d='M150 60v120' stroke='%23465158' stroke-width='4'/%3E%3Cpath d='M120 150c10 10 50 10 60 0' stroke='%23465158' stroke-width='4' fill='none'/%3E%3Cpath d='M20 40l-8 20M60 26l-4 22M250 30l8 20M290 50l6 18' stroke='%23dbe9ef' stroke-width='4' stroke-linecap='round'/%3E%3C/svg%3E">
+            </div>
+            <div>
+              <h4>下雨就不跑了？我们在雨里走完了八百米</h4>
+              <span>@慢速快门 · 09:08</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 热门视频 -->
+  <section class="yp-sec yp-sec-alt" id="ypVideos" aria-labelledby="ypVideosTitle">
+    <div class="yp-wrap">
+      <div class="yp-sec-head">
+        <div>
+          <span class="yp-eyebrow">Hot · 热门视频</span>
+          <h2 class="yp-h2" id="ypVideosTitle" style="margin-top:10px">社区热榜里的班花影像</h2>
+        </div>
+        <p>按本周播放、互动与完播率综合排序，每一支都来自印象足拍班花创作者的原创镜头。</p>
+      </div>
+      <div class="yp-vgrid" id="ypVideoGrid">
+        <article class="yp-card" data-keywords="校园 日常记录 走廊">
+          <div class="yp-thumb">
+            <img alt="视频封面：傍晚的走廊，值日生推着拖把穿过斜阳" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 480 270'%3E%3Crect width='480' height='270' fill='%23ffe0bd'/%3E%3Cpath d='M0 200h480v70H0z' fill='%23a5673f'/%3E%3Cpath d='M60 0h120v200H60z' fill='%23fff6e6'/%3E%3Cpath d='M300 0h120v200H300z' fill='%23fff0dd'/%3E%3Cpath d='M180 0v200M300 0v200' stroke='%23d08a54' stroke-width='8'/%3E%3Ccircle cx='240' cy='130' r='26' fill='%23efb28e'/%3E%3Cpath d='M210 200c0-34 14-52 30-52s30 18 30 52z' fill='%23c94f30'/%3E%3Cpath d='M200 200l80 0' stroke='%234a3527' stroke-width='6'/%3E%3C/svg%3E">
+            <span class="yp-dur">06:22</span>
+            <span class="yp-play"><i>▶</i></span>
+          </div>
+          <div class="yp-card-body">
+            <div class="yp-tags"><span class="yp-tag">日常记录</span><span class="yp-tag">校园</span></div>
+            <h3>值日生的黄昏：拖把划过走廊的十四分钟</h3>
+            <p>把一件小事拍到极致。固定机位加手持补拍，完整记录放学后走廊从喧闹到安静的声场变化，被社区称作“最治愈的机械动作”。</p>
+            <div class="yp-meta"><b>@拖把诗人</b><span>播放 38.2 万</span><span>点赞 2.6 万</span><span>收藏 8,102</span></div>
+            <div class="yp-card-foot">
+              <div class="yp-actions">
+                <button class="yp-act" data-like="v1" aria-label="点赞">♡ <span>26,104</span></button>
+                <button class="yp-act" data-save="v1" aria-label="收藏">☆ 收藏</button>
+              </div>
+              <a class="yp-linkmore" href="#ypTopics">同主题 →</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="yp-card" data-keywords="社团 招新 人物访谈">
+          <div class="yp-thumb">
+            <img alt="视频封面：社团招新摊位前的长桌与彩色手绘海报" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 480 270'%3E%3Crect width='480' height='270' fill='%23f4ecdc'/%3E%3Crect x='30' y='150' width='420' height='26' rx='6' fill='%23905f3c'/%3E%3Crect x='60' y='60' width='120' height='90' rx='6' fill='%23f07a4f'/%3E%3Cpath d='M80 92h80M80 110h56' stroke='%23fff3e6' stroke-width='7' stroke-linecap='round'/%3E%3Crect x='200' y='50' width='110' height='100' rx='6' fill='%236d9ec4'/%3E%3Ccircle cx='255' cy='90' r='20' fill='%23fff4d9'/%3E%3Crect x='330' y='70' width='120' height='80' rx='6' fill='%23a5bf8c'/%3E%3Cpath d='M352 100h76M352 118h48' stroke='%23f6fff1' stroke-width='7' stroke-linecap='round'/%3E%3Cpath d='M0 200h480' stroke='%23c9a780' stroke-width='3' stroke-dasharray='10 8'/%3E%3C/svg%3E">
+            <span class="yp-dur">14:05</span>
+            <span class="yp-play"><i>▶</i></span>
+          </div>
+          <div class="yp-card-body">
+            <div class="yp-tags"><span class="yp-tag">人物访谈</span><span class="yp-tag">社团招新</span></div>
+            <h3>社长访谈：一张海报背后的七天七夜</h3>
+            <p>从选题、拉赞助到打印张贴，影像社的四个人讲述了招新季最狼狈也最热闹的一周，还现场还原了当年那张手绘海报的排版。</p>
+            <div class="yp-meta"><b>@社团观察员</b><span>播放 29.7 万</span><span>点赞 1.8 万</span><span>收藏 6,430</span></div>
+            <div class="yp-card-foot">
+              <div class="yp-actions">
+                <button class="yp-act" data-like="v2" aria-label="点赞">♡ <span>18,042</span></button>
+                <button class="yp-act" data-save="v2" aria-label="收藏">☆ 收藏</button>
+              </div>
+              <a class="yp-linkmore" href="#ypAuthors">看作者 →</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="yp-card" data-keywords="教程 剪辑 色彩">
+          <div class="yp-thumb">
+            <img alt="视频封面：剪辑时间线特写与色轮调色界面示意图" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 480 270'%3E%3Crect width='480' height='270' fill='%232a2d36'/%3E%3Crect x='40' y='50' width='400' height='60' rx='8' fill='%233c4050'/%3E%3Crect x='56' y='66' width='90' height='28' rx='5' fill='%23e0713f'/%3E%3Crect x='156' y='66' width='140' height='28' rx='5' fill='%2369a7c9'/%3E%3Crect x='306' y='66' width='70' height='28' rx='5' fill='%23b9a45d'/%3E%3Ccircle cx='150' cy='180' r='58' fill='none' stroke='%235e6b86' stroke-width='14'/%3E%3Ccircle cx='150' cy='180' r='58' fill='none' stroke='%23e0713f' stroke-width='14' stroke-dasharray='80 260'/%3E%3Ccircle cx='300' cy='180' r='46' fill='%23444a5c'/%3E%3Cpath d='M300 150v60M270 180h60' stroke='%23838fa8' stroke-width='6'/%3E%3Crect x='380' y='120' width='60' height='120' rx='8' fill='%23e8a33d' opacity='.85'/%3E%3C/svg%3E">
+            <span class="yp-dur">21:38</span>
+            <span class="yp-play"><i>▶</i></span>
+          </div>
+          <div class="yp-card-body">
+            <div class="yp-tags"><span class="yp-tag">教程干货</span><span class="yp-tag">剪辑</span></div>
+            <h3>把黄昏调成记忆的颜色：校园片调色全流程</h3>
+            <p>一支专门讲色彩的教学片。从白平衡、宽容度到 HSL 分离，用同一段走廊素材演示三套完全不同情绪的处理方案。</p>
+            <div class="yp-meta"><b>@色温七千</b><span>播放 24.1 万</span><span>点赞 1.5 万</span><span>收藏 9,782</span></div>
+            <div class="yp-card-foot">
+              <div class="yp-actions">
+                <button class="yp-act" data-like="v3" aria-label="点赞">♡ <span>15,320</span></button>
+                <button class="yp-act" data-save="v3" aria-label="收藏">☆ 收藏</button>
+              </div>
+              <a class="yp-linkmore" href="#ypTopics">专题 →</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="yp-card" data-keywords="城市探索 在地文化">
+          <div class="yp-thumb">
+            <img alt="视频封面：校门外的旧书店门口挂着风铃与手写招牌" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 480 270'%3E%3Crect width='480' height='270' fill='%23e9dfc9'/%3E%3Crect x='60' y='70' width='360' height='200' fill='%23cf9a63'/%3E%3Crect x='90' y='110' width='120' height='160' fill='%23823f2c'/%3E%3Crect x='270' y='110' width='120' height='160' fill='%23823f2c'/%3E%3Crect x='100' y='60' width='280' height='34' rx='6' fill='%233f6b5b'/%3E%3Cpath d='M140 140h70M140 166h58M300 140h70M300 166h58' stroke='%23f3d9b6' stroke-width='8' stroke-linecap='round'/%3E%3Ccircle cx='240' cy='120' r='16' fill='%23f0c06a'/%3E%3Cpath d='M240 96v-16' stroke='%23855c3a' stroke-width='4'/%3E%3C/svg%3E">
+            <span class="yp-dur">18:24</span>
+            <span class="yp-play"><i>▶</i></span>
+          </div>
+          <div class="yp-card-body">
+            <div class="yp-tags"><span class="yp-tag">城市探索</span><span class="yp-tag">在地文化</span></div>
+            <h3>校门口那家旧书店，开了二十七年</h3>
+            <p>我们跟着老板整理了一整面旧书架，听他讲哪些书最常被学生翻看，又是怎么从被翻旧的书页里认出每一届学生的样子。</p>
+            <div class="yp-meta"><b>@街角记录小组</b><span>播放 20.6 万</span><span>点赞 1.3 万</span><span>收藏 5,206</span></div>
+            <div class="yp-card-foot">
+              <div class="yp-actions">
+                <button class="yp-act" data-like="v4" aria-label="点赞">♡ <span>13,008</span></button>
+                <button class="yp-act" data-save="v4" aria-label="收藏">☆ 收藏</button>
+              </div>
+              <a class="yp-linkmore" href="#ypDynamic">企业动态 →</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="yp-card" data-keywords="科技 深度测评">
+          <div class="yp-thumb">
+            <img alt="视频封面：手持稳定器与相机在校园草坪上的棚拍布置" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 480 270'%3E%3Crect width='480' height='270' fill='%23cfe0d9'/%3E%3Cpath d='M0 190h480v80H0z' fill='%237a9c88'/%3E%3Crect x='150' y='90' width='80' height='60' rx='8' fill='%232f3a3f'/%3E%3Ccircle cx='190' cy='120' r='20' fill='%23678ea3'/%3E%3Crect x='230' y='104' width='34' height='34' rx='6' fill='%234a5b62'/%3E%3Cpath d='M190 150v40' stroke='%23333' stroke-width='10'/%3E%3Cpath d='M150 200h80' stroke='%23888' stroke-width='8' stroke-linecap='round'/%3E%3Crect x='320' y='110' width='90' height='70' rx='10' fill='%23f6f3e8'/%3E%3Cpath d='M338 134h54M338 154h34' stroke='%23a5a08a' stroke-width='7' stroke-linecap='round'/%3E%3C/svg%3E">
+            <span class="yp-dur">11:52</span>
+            <span class="yp-play"><i>▶</i></span>
+          </div>
+          <div class="yp-card-body">
+            <div class="yp-tags"><span class="yp-tag">深度测评</span><span class="yp-tag">器材</span></div>
+            <h3>三千预算拍校园短片：我们试了六种组合</h3>
+            <p>不吹参数，只拍样片。六套器材在相同的走廊、操场和夜间教室里完成对照拍摄，结论可能和你想的完全不一样。</p>
+            <div class="yp-meta"><b>@器材不吹牛</b><span>播放 18.9 万</span><span>点赞 1.1 万</span><span>收藏 7,341</span></div>
+            <div class="yp-card-foot">
+              <div class="yp-actions">
+                <button class="yp-act" data-like="v5" aria-label="点赞">♡ <span>11,486</span></button>
+                <button class="yp-act" data-save="v5" aria-label="收藏">☆ 收藏</button>
+              </div>
+              <a class="yp-linkmore" href="#ypTopics">专题 →</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="yp-card" data-keywords="治愈 影像 雨天">
+          <div class="yp-thumb">
+            <img alt="视频封面：雨后玻璃窗上的水珠与窗内的暖黄台灯" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 480 270'%3E%3Crect width='480' height='270' fill='%233b4a58'/%3E%3Crect x='40' y='30' width='400' height='210' rx='12' fill='%234f6373'/%3E%3Crect x='40' y='30' width='400' height='210' rx='12' fill='url(%23none)'/%3E%3Ccircle cx='150' cy='110' r='26' fill='%23ffe3ae' opacity='.9'/%3E%3Cpath d='M120 200c20-40 40-58 60-58s40 18 60 58z' fill='%232a333c'/%3E%3Ccircle cx='330' cy='96' r='7' fill='%23cfe4ef' opacity='.8'/%3E%3Ccircle cx='366' cy='138' r='5' fill='%23cfe4ef' opacity='.7'/%3E%3Ccircle cx='300' cy='160' r='9' fill='%23cfe4ef' opacity='.6'/%3E%3Ccircle cx='392' cy='80' r='4' fill='%23cfe4ef' opacity='.7'/%3E%3Cpath d='M40 30h400' stroke='%238ca3b3' stroke-width='10'/%3E%3C/svg%3E">
+            <span class="yp-dur">09:47</span>
+            <span class="yp-play"><i>▶</i></span>
+          </div>
+          <div class="yp-card-body">
+            <div class="yp-tags"><span class="yp-tag">治愈影像</span><span class="yp-tag">慢生活</span></div>
+            <h3>雨声、台灯与一本没读完的书</h3>
+            <p>没有台词，没有配乐，只有窗外的雨和翻页的声音。这条被社区反复搬运的短片，让很多人在深夜里安静了九分钟。</p>
+            <div class="yp-meta"><b>@慢速生活家</b><span>播放 16.4 万</span><span>点赞 1.0 万</span><span>收藏 4,872</span></div>
+            <div class="yp-card-foot">
+              <div class="yp-actions">
+                <button class="yp-act" data-like="v6" aria-label="点赞">♡ <span>10,206</span></button>
+                <button class="yp-act" data-save="v6" aria-label="收藏">☆ 收藏</button>
+              </div>
+              <a class="yp-linkmore" href="#ypStories">读随笔 →</a>
+            </div>
+          </div>
+        </article>
+      </div>
+      <div class="yp-empty" id="ypVideosEmpty">没有匹配的影像，换个关键词试试，例如“走廊”“雨天”“教程”。</div>
+    </div>
+  </section>
+
+  <!-- 榜单：数据榜单 -->
+  <section class="yp-sec" id="ypCharts" aria-labelledby="ypChartsTitle">
+    <div class="yp-wrap">
+      <div class="yp-sec-head">
+        <div>
+          <span class="yp-eyebrow">Charts · 数据榜单</span>
+          <h2 class="yp-h2" id="ypChartsTitle" style="margin-top:10px">印象足拍班花 · 本周三张榜</h2>
+        </div>
+        <p>热度榜看播放，口碑榜看完播与收藏，新人榜专门留给最近三十天首次上传的创作者。</p>
+      </div>
+      <div class="yp-charts">
+        <div class="yp-chart">
+          <h3><span class="yp-crown">🔥</span>热度榜</h3>
+          <span class="yp-muted">按 7 日综合播放量排序</span>
+          <ol>
+            <li><div><b>值日生的黄昏：拖把划过走廊的十四分钟</b><span>38.2 万播放 · @拖把诗人</span></div></li>
+            <li><div><b>日落前最后一节课</b><span>42.8 万播放 · @林间取景器</span></div></li>
+            <li><div><b>社长访谈：一张海报背后的七天七夜</b><span>29.7 万播放 · @社团观察员</span></div></li>
+            <li><div><b>把黄昏调成记忆的颜色</b><span>24.1 万播放 · @色温七千</span></div></li>
+            <li><div><b>校门口那家旧书店，开了二十七年</b><span>20.6 万播放 · @街角记录小组</span></div></li>
+          </ol>
+        </div>
+        <div class="yp-chart">
+          <h3><span class="yp-crown">💛</span>口碑榜</h3>
+          <span class="yp-muted">按完播率与收藏率加权</span>
+          <ol>
+            <li><div><b>雨声、台灯与一本没读完的书</b><span>完播 87% · 收藏 4,872</span></div></li>
+            <li><div><b>天台上的风，把校服吹成了旗</b><span>完播 83% · 收藏 3,904</span></div></li>
+            <li><div><b>三千预算拍校园短片：六种组合</b><span>完播 79% · 收藏 7,341</span></div></li>
+            <li><div><b>十一点的晚自习</b><span>完播 76% · 收藏 3,166</span></div></li>
+            <li><div><b>下雨就不跑了？我们走完了八百米</b><span>完播 74% · 收藏 2,918</span></div></li>
+          </ol>
+        </div>
+        <div class="yp-chart">
+          <h3><span class="yp-crown">🌱</span>新人榜</h3>
+          <span class="yp-muted">近 30 天首次上传的创作者</span>
+          <ol>
+            <li><div><b>早自习前的三分钟</b><span>@青苔笔记 · 首作 6.2 万</span></div></li>
+            <li><div><b>书包里掉出来的东西</b><span>@周五不交作业 · 4.8 万</span></div></li>
+            <li><div><b>走廊尽头的饮水机</b><span>@常温白开 · 4.1 万</span></div></li>
+            <li><div><b>食堂二楼的第四个窗口</b><span>@加饭不加价 · 3.7 万</span></div></li>
+            <li><div><b>晚风里的黑板报</b><span>@粉笔灰过敏 · 3.2 万</span></div></li>
+          </ol>
+        </div>
+      </div>
+      <div class="yp-numbers">
+        <div class="yp-number"><b data-count="2860">2,860+</b><span>累计原创短片</span></div>
+        <div class="yp-number"><b data-count="963">96.3%</b><span>创作者月度留存</span></div>
+        <div class="yp-number"><b data-count="135">135 万</b><span>累计收藏次数</span></div>
+        <div class="yp-number"><b data-count="48">48 小时</b><span>投稿审核平均时长</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 专题企划 -->
+  <section class="yp-sec yp-sec-alt" id="ypTopics" aria-labelledby="ypTopicsTitle">
+    <div class="yp-wrap">
+      <div class="yp-sec-head">
+        <div>
+          <span class="yp-eyebrow">Projects · 专题企划</span>
+          <h2 class="yp-h2" id="ypTopicsTitle" style="margin-top:10px">正在进行的校园影像企划</h2>
+        </div>
+        <p>我们与创作者共同制作长期专题，每个企划都由编辑策划、作者拍摄、社区共同投票选题。</p>
+      </div>
+      <div class="yp-topic">
+        <article class="yp-topic-card">
+          <div class="yp-thumb">
+            <img alt="专题封面：全天候校园影像企划的时钟与走廊拼贴画面" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 600 280'%3E%3Crect width='600' height='280' fill='%23fff0e2'/%3E%3Ccircle cx='300' cy='140' r='88' fill='%23f6b489' opacity='.55'/%3E%3Ccircle cx='300' cy='140' r='58' fill='%23fffaf3'/%3E%3Cpath d='M300 96v46l32 22' stroke='%23c5522f' stroke-width='8' stroke-linecap='round' fill='none'/%3E%3Crect x='40' y='60' width='110' height='76' rx='8' fill='%23e58b5b' opacity='.85'/%3E%3Crect x='450' y='150' width='110' height='76' rx='8' fill='%23739bb7' opacity='.85'/%3E%3Cpath d='M40 210h520' stroke='%23d5a685' stroke-width='4' stroke-dasharray='12 10'/%3E%3C/svg%3E">
+            <span class="yp-dur">企划进行中</span>
+          </div>
+          <div class="yp-topic-body">
+            <h3>班花日常 24H <span class="yp-topic-status">更新中</span></h3>
+            <p>以一天为时间轴，记录同一所学校在不同时段的真实状态。清晨的宿舍楼下、中午的食堂、傍晚的操场与深夜的教室，各自成片。</p>
+            <ul class="yp-topic-list">
+              <li>05:40 宿舍楼下的第一盏灯 <em>第 3 集</em></li>
+              <li>12:10 食堂二楼排队最长的那条队 <em>第 4 集</em></li>
+              <li>22:50 熄灯前的最后一首歌 <em>第 5 集 · 制作中</em></li>
+            </ul>
+          </div>
+        </article>
+        <article class="yp-topic-card">
+          <div class="yp-thumb">
+            <img alt="专题封面：新生报到日企划的行李箱、指示牌与校园地图" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 600 280'%3E%3Crect width='600' height='280' fill='%23dbe8ef'/%3E%3Crect x='60' y='120' width='140' height='100' rx='10' fill='%23d66a44'/%3E%3Crect x='82' y='140' width='96' height='6' rx='3' fill='%23f6d7c5'/%3E%3Cpath d='M110 120v-24h40v24' stroke='%238a4b33' stroke-width='8' fill='none'/%3E%3Crect x='240' y='70' width='150' height='60' rx='8' fill='%23fff8ec'/%3E%3Cpath d='M262 96h106M262 112h72' stroke='%23688090' stroke-width='6' stroke-linecap='round'/%3E%3Crect x='430' y='90' width='120' height='130' rx='8' fill='%23f2f7f8'/%3E%3Cpath d='M456 130h68M456 152h50M456 174h60' stroke='%2399aab4' stroke-width='6' stroke-linecap='round'/%3E%3C/svg%3E">
+            <span class="yp-dur">报名开放</span>
+          </div>
+          <div class="yp-topic-body">
+            <h3>新生报到日 · 城市驻拍计划 <span class="yp-topic-status yp-updating">筹备中</span></h3>
+            <p>把镜头交给刚进校门的人。我们在杭州、成都、西安三地设置驻拍点，由当地创作者带新生完成第一支三分钟校园短片。</p>
+            <ul class="yp-topic-list">
+              <li>杭州站：西湖边的第一堂外拍课 <em>10 月 18 日</em></li>
+              <li>成都站：从宿舍到食堂的路线图 <em>10 月 25 日</em></li>
+              <li>西安站：城墙下的开学第一帧 <em>11 月 02 日</em></li>
+            </ul>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- 创作者矩阵 -->
+  <section class="yp-sec" id="ypAuthors" aria-labelledby="ypAuthorsTitle">
+    <div class="yp-wrap">
+      <div class="yp-sec-head">
+        <div>
+          <span class="yp-eyebrow">Creators · 创作者</span>
+          <h2 class="yp-h2" id="ypAuthorsTitle" style="margin-top:10px">让印象足拍班花被看见的人</h2>
+        </div>
+        <p>他们是学生、是老师、是毕业后仍回来拍校园的人。每一位都在持续更新自己的影像日记。</p>
+      </div>
+      <div class="yp-authors">
+        <article class="yp-author">
+          <div class="yp-avatar" style="background:linear-gradient(135deg,#e0713f,#f6b489)">林</div>
+          <h3>林间取景器</h3>
+          <span class="yp-role">纪实短片 · 校园日常</span>
+          <p>视觉传达专业出身，习惯用固定机位等待真实的瞬间。相信最好的镜头永远在按下录制之后的几分钟里发生。</p>
+          <div class="yp-author-nums"><div><b>86</b>作品</div><div><b>12.4万</b>粉丝</div></div>
+          <button class="yp-btn yp-btn-ghost" data-author="林间取景器|纪实短片 · 校园日常|86 部原创作品，擅长固定机位与现场收音，作品《日落前最后一节课》获社区年度口碑提名。">作者简介</button>
+        </article>
+        <article class="yp-author">
+          <div class="yp-avatar" style="background:linear-gradient(135deg,#4f7d9b,#9cc3d5)">拖</div>
+          <h3>拖把诗人</h3>
+          <span class="yp-role">极简影像 · 声音设计</span>
+          <p>把日常里最不起眼的动作拍成诗。擅长长镜头与拟音，作品多以环境声为主体，被观众称为“会呼吸的画面”。</p>
+          <div class="yp-author-nums"><div><b>54</b>作品</div><div><b>9.8万</b>粉丝</div></div>
+          <button class="yp-btn yp-btn-ghost" data-author="拖把诗人|极简影像 · 声音设计|54 部原创短片，专注长镜头与环境声采集，代表作《值日生的黄昏》累计播放 38 万。">作者简介</button>
+        </article>
+        <article class="yp-author">
+          <div class="yp-avatar" style="background:linear-gradient(135deg,#7c9a6a,#c1d4a8)">色</div>
+          <h3>色温七千</h3>
+          <span class="yp-role">后期调色 · 教程干货</span>
+          <p>影像后期从业者，业余回校拍片。喜欢用色彩讲情绪，教学片坚持“先讲清楚为什么，再讲怎么点按钮”。</p>
+          <div class="yp-author-nums"><div><b>41</b>作品</div><div><b>7.2万</b>粉丝</div></div>
+          <button class="yp-btn yp-btn-ghost" data-author="色温七千|后期调色 · 教程干货|41 部原创教程，主讲校园题材调色与剪辑流程，单支教学片收藏超 9,700。">作者简介</button>
+        </article>
+        <article class="yp-author">
+          <div class="yp-avatar" style="background:linear-gradient(135deg,#a8749b,#e2b4d2)">街</div>
+          <h3>街角记录小组</h3>
+          <span class="yp-role">城市探索 · 在地文化</span>
+          <p>四人小团队，常在放学后沿着校门外的一条街走完整个下午。他们关心店铺、招牌与被反复走过的路口。</p>
+          <div class="yp-author-nums"><div><b>63</b>作品</div><div><b>8.6万</b>粉丝</div></div>
+          <button class="yp-btn yp-btn-ghost" data-author="街角记录小组|城市探索 · 在地文化|63 部原创作品，长期记录校门外街区的人与店，作品多次入选社区年度精选。">作者简介</button>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- 关键词深度解析（品牌理念） -->
+  <section class="yp-sec yp-sec-alt" id="ypAbout" aria-labelledby="ypAboutTitle">
+    <div class="yp-wrap">
+      <div class="yp-sec-head">
+        <div>
+          <span class="yp-eyebrow">About · 品牌故事</span>
+          <h2 class="yp-h2" id="ypAboutTitle" style="margin-top:10px">关于印象足拍班花</h2>
+        </div>
+        <p>从一个寝室的硬盘文件夹，到一间持续运营的校园影像社区，我们花了六年。</p>
+      </div>
+      <div class="yp-about-grid">
+        <div class="yp-about-text">
+          <p><strong>印象足拍班花</strong>是一家专注校园生活影像的原创视频品牌，也是面向创作者与观众持续运营的内容社区。我们以“记录真实的校园日常”为初衷，把镜头对准课堂、走廊、操场与深夜的教室，输出高清、正版、有温度的短片。作为官方网站，这里同时承担作品展示、创作者服务与品牌资讯发布三项职能。</p>
+          <p>平台深耕校园垂直领域，坚持由编辑团队参与选题策划与成片审核，保证每一条内容都经得起反复观看。我们相信，值得信赖的影像不来自夸张的戏剧冲突，而来自一次真实的晚自习、一场没跑完的八百米、一本被翻旧的课本。</p>
+          <div class="yp-quote">“我们不生产青春，我们只是把正在发生的青春，认真地留在硬盘里。”</div>
+          <p>目前社区已汇聚 142 位签约创作者，累计 2,860 余部原创短片。我们为创作者提供拍摄支持、后期指导与流量推荐，也为企业合作伙伴提供有品质的内容共创方案。</p>
+        </div>
+        <aside class="yp-about-side">
+          <h3 class="yp-h3">品牌关键词</h3>
+          <ul class="yp-mini-list">
+            <li>官方发布，全部内容均为原创正版</li>
+            <li>高清画质，移动端与桌面端同等体验</li>
+            <li>社区共建，选题由观众投票产生</li>
+            <li>专业审核，48 小时内完成投稿反馈</li>
+            <li>持续运营，六年稳定更新不间断</li>
+          </ul>
+          <div class="yp-numbers" style="grid-template-columns:1fr 1fr;margin-top:20px">
+            <div class="yp-number" style="padding:14px"><b data-count="6">6 年</b><span>持续运营</span></div>
+            <div class="yp-number" style="padding:14px"><b data-count="142">142 位</b><span>签约创作者</span></div>
+          </div>
+        </aside>
+      </div>
+
+      <div class="yp-deep" style="margin-top:46px">
+        <h3 class="yp-h3">一、为什么是“印象足拍班花”</h3>
+        <p>“印象”来自影像最本质的功能：把时间留在画面里。“足拍”强调动手与足量，我们鼓励创作者真的走出去，用脚步和镜头把校园走一遍，而不是只坐在宿舍里剪素材。“班花”则是一个带着轻松与亲切的校园符号，它不被用来定义外貌，而更像一个昵称，指代那些在每个班级里被记住、被反复提起的鲜活瞬间。三者组合，构成了印象足拍班花的内容底色：具体、真实、带一点少年气。</p>
+        <p>也正因为这个定位，我们不太做宏大的叙事。平台首页的焦点位经常留给一支关于值日生拖地的短片，或者一段雨天里没跑完的八百米。这些内容在数据上未必最亮眼，但它们构成了社区公认的“印象感”——看完之后，你会想起自己也曾站在那样的走廊里。</p>
+        <h3 class="yp-h3">二、内容生态是如何运转的</h3>
+        <p>印象足拍班花的内容生态由三层构成。第一层是编辑策划的长期专题，例如“班花日常 24H”，由平台提出选题框架，邀请创作者认领时段进行拍摄。第二层是创作者自主投稿的日常短片，题材不限，但必须经过画质、版权与内容真实性审核。第三层是社区互动产生的二次内容，包括观众评论、投票选题与创作者之间的互相翻拍。</p>
+        <p>为了让生态持续运转，平台在每一环都设置了具体的反馈机制：投稿 48 小时内给出审核意见，成片上线后 7 天内提供数据周报，季度末评选口碑作品并给予下一季度的拍摄支持。我们希望创作者清楚知道自己的作品被谁看见、为什么被喜欢，而不是把上传当作一次单向的投递。</p>
+        <h3 class="yp-h3">三、品质与口碑从哪里来</h3>
+        <p>校园题材容易陷入两种套路：过度美化的滤镜，或者刻意制造的冲突。印象足拍班花选择第三条路——把技术标准提到足够高，把表达欲望降下来。平台对投稿有明确的画质要求，建议 1080P 以上、现场收音优先；同时鼓励创作者少用配乐、少用慢动作，把注意力放回画面本身的信息量。</p>
+        <p>口碑正是由此积累的。社区里被反复收藏的作品，往往是那些“什么都没发生”的短片：一个人坐在天台吹风，一间教室从喧闹到安静，一家开了二十七年的旧书店。观众在评论区写下的也多是自己的生活，而不是对拍摄技巧的夸奖。对我们而言，这就是品质内容最可靠的证明。</p>
+        <h3 class="yp-h3">四、面向未来的校园影像</h3>
+        <p>接下来一年，印象足拍班花会把重心放在两件事上。一是把城市驻拍计划覆盖到更多城市，让不同地域的校园生活被同一种标准记录；二是完善创作者成长体系，从器材支持、后期课程到作品集整理，帮助更多学生把“拍着玩”变成可以持续投入的创作习惯。</p>
+        <p>我们也在探索校园影像与企业品牌的合作边界：不做硬广植入，而是以共创专题的方式，让品牌成为记录的一部分。这条路不快，但我们愿意持续运营下去，因为每一届学生都会毕业，而校园里总有人正在经历他们的第一次晚自习。</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 故事随笔 -->
+  <section class="yp-sec" id="ypStories" aria-labelledby="ypStoriesTitle">
+    <div class="yp-wrap">
+      <div class="yp-sec-head">
+        <div>
+          <span class="yp-eyebrow">Notes · 影像随笔</span>
+          <h2 class="yp-h2" id="ypStoriesTitle" style="margin-top:10px">拍摄之外的几句话</h2>
+        </div>
+        <p>影像之外，创作者也写一点文字。它们和短片一起，构成印象足拍班花完整的记录。</p>
+      </div>
+      <div class="yp-stories">
+        <article class="yp-story">
+          <h3 class="yp-h4">拍完那条走廊，我在原地站了很久</h3>
+          <p>收工时天已经黑透了，走廊只剩下安全出口的绿光。我把机器收进包里，忽然意识到，这条走廊我走了三年，却是第一次认真看它的长度。</p>
+          <div class="yp-story-meta"><span>@拖把诗人</span><span>2026-10-14</span><span>阅读 3,214</span></div>
+        </article>
+        <article class="yp-story">
+          <h3 class="yp-h4">关于“班花”这个词，我们讨论了一整个下午</h3>
+          <p>编辑部几个人坐在会议室里，从审美偏见聊到校园记忆。最后我们决定不定义它，只把它当作一个入口——点进去，看到的是你自己的某段时光。</p>
+          <div class="yp-story-meta"><span>@编辑部手记</span><span>2026-10-08</span><span>阅读 5,082</span></div>
+        </article>
+        <article class="yp-story">
+          <h3 class="yp-h4">旧书店老板说，他记得每一届学生的样子</h3>
+          <p>他说不用看书名，看学生翻书的手势就知道是哪个年级。我们把这句剪进了片子的开头，后来收到很多评论说，想起自己也曾那样翻过一本书。</p>
+          <div class="yp-story-meta"><span>@街角记录小组</span><span>2026-09-29</span><span>阅读 4,167</span></div>
+        </article>
+        <article class="yp-story">
+          <h3 class="yp-h4">给新人的建议：先拍满一百条再说风格</h3>
+          <p>很多同学一上来就问用什么调色预设。我的回答通常是：先把这一百条拍完。风格不是选出来的，是拍着拍着自己长出来的东西。</p>
+          <div class="yp-story-meta"><span>@色温七千</span><span>2026-09-21</span><span>阅读 6,930</span></div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- 用户评价 -->
+  <section class="yp-sec yp-sec-alt" id="ypReviews" aria-labelledby="ypReviewsTitle">
+    <div class="yp-wrap">
+      <div class="yp-sec-head">
+        <div>
+          <span class="yp-eyebrow">Voices · 社区口碑</span>
+          <h2 class="yp-h2" id="ypReviewsTitle" style="margin-top:10px">观众和创作者怎么说</h2>
+        </div>
+        <p>来自印象足拍班花社区的六条真实评价，语气不同，关注点也不同。</p>
+      </div>
+      <div class="yp-reviews">
+        <article class="yp-review">
+          <div class="yp-review-top">
+            <div class="yp-mini-av" style="background:#e0713f">周</div>
+            <div><b>周末补觉中</b><span>观众 · 在校高三</span></div>
+            <div class="yp-stars">★★★★★</div>
+          </div>
+          <p>《日落前最后一节课》我看了三遍。第三遍是关掉弹幕看的，听到后排翻书的声音时突然有点想哭。它没有讲任何大道理，就是把一节课拍完了。</p>
+        </article>
+        <article class="yp-review yp-quote-review">
+          <div class="yp-review-top">
+            <div class="yp-mini-av" style="background:#4f7d9b">刘</div>
+            <div><b>刘同学不熬夜</b><span>创作者 · 加入 8 个月</span></div>
+            <div class="yp-stars">★★★★★</div>
+          </div>
+          <p>作为一个刚投稿的新人，最打动我的是审核意见写得很具体：哪一段收音可以再收一格，哪个转场建议换成硬切。不是模板式的“感谢投稿”，是真的有人看完并思考过。</p>
+        </article>
+        <article class="yp-review">
+          <div class="yp-review-top">
+            <div class="yp-mini-av" style="background:#7c9a6a">陈</div>
+            <div><b>陈老师教语文</b><span>观众 · 中学教师</span></div>
+            <div class="yp-stars">★★★★</div>
+          </div>
+          <p>带学生一起看了几支片子做影像鉴赏，他们比我想象中更能看懂长镜头的耐心。唯一想提的是部分作品时长偏长，课堂播放需要提前剪片段。</p>
+        </article>
+        <article class="yp-review">
+          <div class="yp-review-top">
+            <div class="yp-mini-av" style="background:#a8749b">豆</div>
+            <div><b>豆沙包不加糖</b><span>观众 · 应届毕业生</span></div>
+            <div class="yp-stars">★★★★★</div>
+          </div>
+          <p>毕业三年了还会回来刷。这里的校园永远是我记忆里的样子，走廊还是那样长，食堂二楼还是排队最久。是一种很奇妙的陪伴感。</p>
+        </article>
+        <article class="yp-review">
+          <div class="yp-review-top">
+            <div class="yp-mini-av" style="background:#b98a3d">器</div>
+            <div><b>器材不吹牛</b><span>创作者 · 器材测评</span></div>
+            <div class="yp-stars">★★★★☆</div>
+          </div>
+          <p>平台对硬广控制得很严，这点很好，我讲器材时也必须给样片而不是只念参数。缺点是拍摄支持申请名额少，希望下一季能多开放一些。</p>
+        </article>
+        <article class="yp-review yp-quote-review">
+          <div class="yp-review-top">
+            <div class="yp-mini-av" style="background:#5f7f8f">阿</div>
+            <div><b>阿七的硬盘</b><span>观众 · 摄影爱好者</span></div>
+            <div class="yp-stars">★★★★★</div>
+          </div>
+          <p>在这里学到最有用的不是技巧，而是审美判断：什么时候该停，什么时候不该加音乐。调色教程那支我存了，回头慢慢练。</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- 企业动态 -->
+  <section class="yp-sec" id="ypDynamic" aria-labelledby="ypDynamicTitle">
+    <div class="yp-wrap">
+      <div class="yp-sec-head">
+        <div>
+          <span class="yp-eyebrow">News · 企业动态</span>
+          <h2 class="yp-h2" id="ypDynamicTitle" style="margin-top:10px">官方发布与最新更新</h2>
+        </div>
+        <p>关于平台、企划与合作的最新消息，均由印象足拍班花官方发布。</p>
+      </div>
+      <div class="yp-vgrid" style="grid-template-columns:repeat(3,minmax(0,1fr))">
+        <article class="yp-topic-card">
+          <div class="yp-topic-body">
+            <h3 class="yp-h4">秋季创作者扶持计划开启报名</h3>
+            <p>面向在校学生创作者的季度扶持，提供器材借用、后期辅导与首页推荐位。报名截止 11 月 30 日。</p>
+            <span class="yp-muted">2026-11-18 · 官方发布</span>
+          </div>
+        </article>
+        <article class="yp-topic-card">
+          <div class="yp-topic-body">
+            <h3 class="yp-h4">城市驻拍计划新增三地</h3>
+            <p>杭州、成都、西安三地驻拍点已确认，当地创作者可申请担任驻地拍摄向导，报名通道同步开放。</p>
+            <span class="yp-muted">2026-11-06 · 企划更新</span>
+          </div>
+        </article>
+        <article class="yp-topic-card">
+          <div class="yp-topic-body">
+            <h3 class="yp-h4">社区选题投票结果公布</h3>
+            <p>本期投票共收到 12,864 票，“毕业季告别”与“社团招新”两个方向入选下一季重点专题。</p>
+            <span class="yp-muted">2026-10-30 · 社区公告</span>
+          </div>
+        </article>
+      </div>
+
+      <h2 class="yp-h2" style="margin:52px 0 22px;font-size:clamp(20px,2.6vw,26px)">合作品牌与共创伙伴</h2>
+      <div class="yp-partners">
+        <div class="yp-partner">拾光影像<small>器材支持</small></div>
+        <div class="yp-partner">旧书店计划<small>场景共创</small></div>
+        <div class="yp-partner">校园广播站<small>声音合作</small></div>
+        <div class="yp-partner">纸间文具<small>内容赞助</small></div>
+        <div class="yp-partner">城市记录馆<small>展映合作</small></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 投稿 CTA -->
+  <section class="yp-sec" id="ypJoin" aria-labelledby="ypJoinTitle" style="padding-top:0">
+    <div class="yp-wrap">
+      <div class="yp-cta">
+        <div>
+          <h2 class="yp-h2" id="ypJoinTitle">你镜头里的校园，也值得被记住</h2>
+          <p>无论是一条三分钟的走廊记录，还是一支完整的毕业短片，印象足拍班花都欢迎你上传。审核通过后即可进入社区推荐池，参与季度口碑评选。</p>
+        </div>
+        <div class="yp-cta-side">
+          <button class="yp-btn yp-btn-gold" data-open="submit">立即投稿 / 报名</button>
+          <button class="yp-btn yp-btn-ghost" data-open="feedback">反馈与举报</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="yp-sec yp-sec-alt" id="ypFaq" aria-labelledby="ypFaqTitle">
+    <div class="yp-wrap">
+      <div class="yp-sec-head" style="justify-content:center;text-align:center;flex-direction:column;align-items:center">
+        <span class="yp-eyebrow">FAQ · 常见问题</span>
+        <h2 class="yp-h2" id="ypFaqTitle" style="margin:10px 0 4px">关于印象足拍班花</h2>
+        <p>投稿、版权、合作与观看相关的常见问题，点击展开查看。</p>
+      </div>
+      <div class="yp-faq">
+        <details>
+          <summary>如何向印象足拍班花投稿？</summary>
+          <p>点击页面中的“投稿 / 报名”按钮，填写作品标题、简介与作者信息，并提交 1080P 以上的成片或样片链接。审核团队会在 48 小时内给出反馈，通过后会安排上线时间。</p>
+        </details>
+        <details>
+          <summary>投稿作品需要满足哪些技术要求？</summary>
+          <p>建议画幅 1080P 及以上，优先现场收音，避免过度滤镜与大量慢动作堆叠。作品须为本人原创并拥有完整版权，如使用第三方音乐需提供授权说明。</p>
+        </details>
+        <details>
+          <summary>平台对校园题材有什么内容要求？</summary>
+          <p>我们鼓励真实、克制、有信息量的记录，不发布刻意制造冲突或侵犯他人隐私的内容。涉及未成年人出镜的作品，需取得监护人同意。</p>
+        </details>
+        <details>
+          <summary>作品上线后可以获得哪些支持？</summary>
+          <p>上线后 7 天内可获得数据周报，优质作品将进入首页推荐位与季度口碑评选。签约创作者还可申请器材借用、后期课程与线下驻拍名额。</p>
+        </details>
+        <details>
+          <summary>如何参与城市驻拍计划？</summary>
+          <p>驻拍计划面向当地创作者开放报名，需提交两条以上校园题材作品。入选者将担任驻地拍摄向导，参与企划拍摄并分享拍摄手记。</p>
+        </details>
+        <details>
+          <summary>品牌或机构可以合作吗？</summary>
+          <p>可以。我们提供共创专题、场景展映与内容定制三种合作方式，坚持不做硬广植入。请通过页面底部的联系邮箱说明合作意向，我们会在 3 个工作日内回复。</p>
+        </details>
+        <details>
+          <summary>观看内容需要付费吗？</summary>
+          <p>印象足拍班花官网的所有原创短片均可免费观看。平台通过合作与企划支持持续运营，不向观众收取观看费用。</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- S8 页脚 -->
+<footer class="yp-footer">
+  <div class="yp-wrap">
+    <div class="yp-foot-grid">
+      <div>
+        <div class="yp-brand">
+          <span class="yp-brand-mark">印</span>
+          <span>
+            <span class="yp-brand-name">印象足拍班花</span>
+            <span class="yp-brand-sub">CAMPUS FILM LAB</span>
+          </span>
+        </div>
+        <p class="yp-foot-desc">印象足拍班花官方网站 · 专注校园生活影像的原创视频品牌与内容社区，持续运营，与创作者一同记录真实的校园日常。</p>
+      </div>
+      <div>
+        <h4>浏览</h4>
+        <ul>
+          <li><a href="#ypFocus">焦点影像</a></li>
+          <li><a href="#ypVideos">热门视频</a></li>
+          <li><a href="#ypTopics">专题企划</a></li>
+          <li><a href="#ypCharts">数据榜单</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>参与</h4>
+        <ul>
+          <li><a href="#ypAuthors">创作者矩阵</a></li>
+          <li><a href="#ypJoin">投稿入口</a></li>
+          <li><a href="#ypDynamic">企业动态</a></li>
+          <li><a href="#ypFaq">常见问题</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>联系我们</h4>
+        <div class="yp-foot-contact">
+          合作邮箱：<b>hello@yinshang-campus.cn</b><br>
+          投稿咨询：<b>submit@yinshang-campus.cn</b><br>
+          工作时间：周一至周五 10:00–18:00
+        </div>
+      </div>
+    </div>
+    <div class="yp-foot-bottom">
+      <span>© 2026 印象足拍班花 版权所有 · 官方网站 · 持续运营中</span>
+      <span>备案号：京 ICP 备 2026008866 号-2 · 广播电视节目制作经营许可（京）字第 0421 号</span>
+    </div>
+  </div>
+</footer>
+
+<!-- Toast -->
+<div class="yp-toast" id="ypToast" role="status" aria-live="polite"></div>
+
+<!-- 通用弹窗 -->
+<div class="yp-modal" id="ypModal" role="dialog" aria-modal="true" aria-label="弹窗">
+  <div class="yp-modal-box">
+    <button class="yp-modal-close" id="ypModalClose" aria-label="关闭">✕</button>
+    <h3 class="yp-h3" id="ypModalTitle">标题</h3>
+    <p id="ypModalDesc">说明</p>
+    <div id="ypModalForm">
+      <input type="text" id="ypFormName" placeholder="你的昵称">
+      <input type="text" id="ypFormContact" placeholder="联系方式（邮箱或社交账号）">
+      <textarea id="ypFormText" rows="3" placeholder="作品链接 / 想说的话"></textarea>
+      <button class="yp-btn yp-btn-main" id="ypFormSubmit" style="width:100%;justify-content:center">提交</button>
+    </div>
+  </div>
+</div>
+
+<button class="yp-totop" id="ypToTop" aria-label="回到顶部">↑</button>
+
+<script>
+(function(){
+  "use strict";
+
+  /* ---------- 吸顶阴影 ---------- */
+  var head = document.getElementById('ypStickyHead');
+  var toTop = document.getElementById('ypToTop');
+  function onScroll(){
+    var y = window.pageYOffset || document.documentElement.scrollTop;
+    if(head){ head.classList.toggle('yp-elev', y > 30); }
+    if(toTop){ toTop.classList.toggle('yp-show', y > 500); }
+  }
+  window.addEventListener('scroll', onScroll, {passive:true});
+  onScroll();
+
+  /* ---------- 回到顶部 ---------- */
+  if(toTop){
+    toTop.addEventListener('click', function(){
+      window.scrollTo({top:0, behavior:'smooth'});
+    });
+  }
+
+  /* ---------- Toast ---------- */
+  var toastEl = document.getElementById('ypToast');
+  var toastTimer = null;
+  function toast(msg){
+    if(!toastEl) return;
+    toastEl.textContent = msg;
+    toastEl.classList.add('yp-show');
+    clearTimeout(toastTimer);
+    toastTimer = setTimeout(function(){ toastEl.classList.remove('yp-show'); }, 2200);
+  }
+
+  /* ---------- 移动端菜单 ---------- */
+  var burger = document.getElementById('ypBurger');
+  var mobileMenu = document.getElementById('ypMobileMenu');
+  if(burger && mobileMenu){
+    burger.addEventListener('click', function(){
+      var open = mobileMenu.classList.toggle('yp-open');
+      burger.setAttribute('aria-expanded', open ? 'true' : 'false');
+    });
+    mobileMenu.querySelectorAll('a').forEach(function(a){
+      a.addEventListener('click', function(){
+        mobileMenu.classList.remove('yp-open');
+        burger.setAttribute('aria-expanded','false');
+      });
+    });
+  }
+
+  /* ---------- 搜索 ---------- */
+  var searchWords = ['走廊','雨天','教程','班花','日常','访谈','调色','旧书店','天台','自习'];
+  function bindSearch(inputId, tipId, btnId){
+    var input = document.getElementById(inputId);
+    var tip = tipId ? document.getElementById(tipId) : null;
+    var btn = btnId ? document.getElementById(btnId) : null;
+    if(!input) return;
+
+    function doSearch(){
+      var q = (input.value || '').trim();
+      if(!q){
+        toast('请输入要搜索的关键词');
+        return;
+      }
+      var matched = searchWords.some(function(w){ return q.indexOf(w) > -1 || w.indexOf(q) > -1; });
+      filterVideos(q, matched);
+      if(tip){
+        tip.textContent = '正在按“' + q + '”筛选影像…';
+        tip.classList.add('yp-show');
+        setTimeout(function(){ tip.classList.remove('yp-show'); }, 2400);
+      }
+      toast('已筛选与“' + q + '”相关的内容');
+    }
+
+    input.addEventListener('keydown', function(e){
+      if(e.key === 'Enter'){ e.preventDefault(); doSearch(); }
+    });
+    if(btn){ btn.addEventListener('click', doSearch); }
+    input.addEventListener('input', function(){
+      var q = (input.value || '').trim();
+      if(tip && q.length > 0){
+        var hit = searchWords.filter(function(w){ return q.indexOf(w) > -1 || w.indexOf(q) > -1; });
+        tip.textContent = hit.length ? '试试：' + hit.slice(0,3).join(' / ') : '暂无联想，换个词试试';
+        tip.classList.add('yp-show');
+      }else if(tip){
+        tip.classList.remove('yp-show');
+      }
+    });
+  }
+  bindSearch('ypSearchInput','ypSearchTip','ypSearchBtn');
+  bindSearch('ypSearchInputM', null, 'ypSearchBtnM');
+
+  function filterVideos(q, matched){
+    var grid = document.getElementById('ypVideoGrid');
+    var empty = document.getElementById('ypVideosEmpty');
+    if(!grid) return;
+    var cards = grid.querySelectorAll('.yp-card');
+    var shown = 0;
+    cards.forEach(function(card){
+      var kw = (card.getAttribute('data-keywords') || '') + ' ' + card.textContent;
+      var hit = kw.indexOf(q) > -1;
+      if(!hit && !matched){
+        hit = false;
+      }else if(!hit && matched){
+        hit = matched;
+      }
+      card.style.display = hit ? '' : 'none';
+      if(hit) shown++;
+    });
+    if(empty){ empty.classList.toggle('yp-show', shown === 0); }
+    if(shown > 0){
+      document.getElementById('ypVideos').scrollIntoView({behavior:'smooth', block:'start'});
+    }
+  }
+
+  /* ---------- 点赞 / 收藏 ---------- */
+  function parseNum(n){
+    return parseInt(String(n).replace(/[^\d]/g,''), 10) || 0;
+  }
+  function fmt(n){
+    return n.toLocaleString('en-US');
+  }
+  document.querySelectorAll('[data-like]').forEach(function(btn){
+    btn.addEventListener('click', function(){
+      var span = btn.querySelector('span');
+      if(!span) return;
+      var n = parseNum(span.textContent);
+      var liked = btn.classList.toggle('yp-liked');
+      span.textContent = fmt(liked ? n + 1 : Math.max(0, n - 1));
+      toast(liked ? '已点赞，谢谢你的喜欢' : '已取消点赞');
+    });
+  });
+  document.querySelectorAll('[data-save]').forEach(function(btn){
+    btn.addEventListener('click', function(){
+      var on = btn.classList.toggle('yp-saved');
+      btn.textContent = on ? '★ 已收藏' : '☆ 收藏';
+      toast(on ? '已加入收藏夹' : '已从收藏夹移除');
+    });
+  });
+
+  /* ---------- 弹窗通用 ---------- */
+  var modal = document.getElementById('ypModal');
+  var mTitle = document.getElementById('ypModalTitle');
+  var mDesc = document.getElementById('ypModalDesc');
+  var mForm = document.getElementById('ypModalForm');
+  var mClose = document.getElementById('ypModalClose');
+  var mSubmit = document.getElementById('ypFormSubmit');
+
+  function openModal(title, desc, showForm){
+    if(!modal) return;
+    mTitle.textContent = title;
+    mDesc.textContent = desc;
+    mForm.style.display = showForm ? 'block' : 'none';
+    modal.classList.add('yp-show');
+    document.body.style.overflow = 'hidden';
+  }
+  function closeModal(){
+    if(!modal) return;
+    modal.classList.remove('yp-show');
+    document.body.style.overflow = '';
+  }
+  if(mClose){ mClose.addEventListener('click', closeModal); }
+  if(modal){
+    modal.addEventListener('click', function(e){
+      if(e.target === modal){ closeModal(); }
+    });
+  }
+  document.addEventListener('keydown', function(e){
+    if(e.key === 'Escape'){ closeModal(); }
+  });
+  if(mSubmit){
+    mSubmit.addEventListener('click', function(){
+      var name = document.getElementById('ypFormName').value.trim();
+      var text = document.getElementById('ypFormText').value.trim();
+      if(!name){ toast('请填写昵称'); return; }
+      if(!text){ toast('请填写作品链接或说明'); return; }
+      closeModal();
+      toast('提交成功，我们会在 48 小时内反馈');
+    });
+  }
+
+  /* 投稿 / 反馈入口 */
+  document.querySelectorAll('[data-open]').forEach(function(el){
+    el.addEventListener('click', function(e){
+      e.preventDefault();
+      var type = el.getAttribute('data-open');
+      if(type === 'submit'){
+        openModal('投稿 / 报名', '请填写基本信息与作品链接。印象足拍班花会在 48 小时内完成审核并回复。', true);
+      }else if(type === 'feedback'){
+        openModal('反馈与举报', '如发现内容问题、版权争议或功能异常，请留下说明。我们会认真处理每一条反馈。', true);
+      }
+    });
+  });
+
+  /* ---------- 作者简介弹窗 ---------- */
+  document.querySelectorAll('[data-author]').forEach(function(btn){
+    btn.addEventListener('click', function(){
+      var parts = (btn.getAttribute('data-author') || '').split('|');
+      var title = parts[0] || '创作者';
+      var role = parts[1] || '';
+      var bio = parts[2] || '';
+      openModal(title, role + ' · ' + bio, false);
+    });
+  });
+
+  /* ---------- 复制链接 ---------- */
+  function copyText(text, okMsg){
+    if(navigator.clipboard && navigator.clipboard.writeText){
+      navigator.clipboard.writeText(text).then(function(){
+        toast(okMsg);
+      }).catch(function(){
+        fallbackCopy(text, okMsg);
+      });
+    }else{
+      fallbackCopy(text, okMsg);
+    }
+  }
+  function fallbackCopy(text, okMsg){
+    var ta = document.createElement('textarea');
+    ta.value = text;
+    ta.style.position = 'fixed';
+    ta.style.opacity = '0';
+    document.body.appendChild(ta);
+    ta.select();
+    try{ document.execCommand('copy'); toast(okMsg); }catch(err){ toast('复制失败，请手动选择'); }
+    document.body.removeChild(ta);
+  }
+
+  /* ---------- 数字滚动 ---------- */
+  var counted = false;
+  function runCount(){
+    if(counted) return;
+    var nums = document.querySelectorAll('[data-count]');
+    if(!nums.length) return;
+    counted = true;
+    nums.forEach(function(el){
+      var target = parseFloat(el.getAttribute('data-count'));
+      if(isNaN(target)) return;
+      var cur = 0;
+      var step = Math.max(1, Math.round(target / 34));
+      var text = el.textContent;
+      var suffix = text.replace(/[\d,\.]/g,'');
+      var hasComma = text.indexOf(',') > -1 || target >= 1000;
+      var t = setInterval(function(){
+        cur += step;
+        if(cur >= target){
+          cur = target;
+          clearInterval(t);
+        }
+        var show = hasComma ? Math.round(cur).toLocaleString('en-US') : Math.round(cur);
+        el.textContent = show + (suffix ? suffix : '');
+      }, 30);
+    });
+  }
+  var statsBox = document.querySelector('.yp-hero-stats');
+  if('IntersectionObserver' in window && statsBox){
+    var io = new IntersectionObserver(function(entries){
+      entries.forEach(function(en){
+        if(en.isIntersecting){ runCount(); io.disconnect(); }
+      });
+    }, {threshold:0.35});
+    io.observe(statsBox);
+  }else{
+    runCount();
+  }
+
+  /* ---------- 卡片点击分享提示 ---------- */
+  var shareTouched = false;
+  document.querySelectorAll('.yp-linkmore').forEach(function(a){
+    a.addEventListener('click', function(){
+      if(!shareTouched){
+        shareTouched = true;
+        copyText('印象足拍班花 · 校园影像社区', '链接已复制，可分享给同学');
+      }
+    });
+  });
+
+})();
+</script>
+</body>
+  </html>
